@@ -1,0 +1,88 @@
+<!--.html Is the front end-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> DOM Project</title>
+
+        <!--Note: Create link fot the stylesheet-->
+
+        <link rel="stylesheet" a href="dom.css" />
+
+        <style>
+            .main, h1{
+                color:rgb(21, 223, 21)
+            }
+            hello{
+                color: blue;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <div id="main">
+            <!--Note: In JS I Will Add A Header-->
+
+        </div>
+            <div id="board">
+
+            <form id="videoSubmissionForm">
+
+            <h1> Video Submission Form</h1>
+            
+        
+            <form>
+                <!--Note: An input container for each to hold the label as well as the input-->
+                <div class = "input">
+                    <label for="fullName">Full Name</label>
+                    <input type="type" name="fullName" id="fullName" />
+                </div>
+
+                <!--Note: An input container to hold the label and the input of the email-->
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"/>
+                </div>
+
+                <!--Note: An input container to hold the label and the input of the phone number-->
+                <div class="input">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber"/>
+                </div>
+
+                <!--Note: An input container to hold the label and the input of the video title-->
+                <div class="input">
+                    <label for="videoTitle">Video Title</label>
+                    <input type="text" name="videoTitle" id="videoTitle"/>
+                </div>
+
+                <!--Note: An input container to hold the label and the input of the video description-->
+                <!--Note: An input2 class is added for the purpose of identifying and distinguishing from the other inputs in CSS-->
+                <div class="input input2">
+                    <label for="videoDescription">Video Description</label>
+                    <!--Note: 'text area' because the video description is multi-line texts that can be used in the area-->
+                    <textarea name="videoDescription" id="videoDescription" cols="30" rows="10">
+                </textarea>
+                </div>
+
+                <!--Note: A separate "div" for uploading videos-->
+                <div class="videoUpload">
+                    <label for="videoUpload">Click To Upload</label>
+                <!--Note: An Input Type is a file to allow selection of files from local machine-->
+                <!--Note: The following function: 'accept="video/*" allows you to only select only video files from local machine [all other files are obsolete] -->
+                    <input 
+                    type="file" name="videoUpload" accept="video/*"  id="videoUpload" />
+                </div>
+                
+                <!--Note: "div" for submitting videos-->
+                <div class="submitButton">
+                    <button id="submit-Button"> Press To Send! </button>
+                </div>
+            </form>
+        </div>
+
+        <script src="./dom.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,116 @@
+/*CSS Styles The Website*/
+
+/* Note: Sets the background image for the entire web page */
+/* Note: Locate image of choice */
+
+body {
+    background-image: url(dom.image.jpeg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+#board{
+    margin: auto;
+    margin-top: 70px;
+    background-color: rgba(3, 3, 3, 0.295);
+    padding: 30px;
+    border-radius: 25px;
+    height: fit-content;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: max-content;
+
+}
+
+#main{
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+#main table{
+    margin: 20px;
+    border: 1px solid green;
+
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.input label{
+    font-size: 20px;
+    color: rgb(255, 155, 155);
+    text-align: center;
+}
+
+.input input{
+    height: 40%;
+}
+
+.input input, textarea{
+    
+    background-color: grey;
+    border: none;
+    border-radius: 23px;
+/*Note: Below values increases the cursor*/
+    padding: 12px 23px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+.input2{
+    height: 200px;
+}
+
+.videoUpload{
+    color:rgb(243, 158, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submitButton{
+    /* background-color: red; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.submitButton button{
+    width: 100px;
+    border-radius: 23px;
+    height: 45px;
+    background-color: rgb(146, 84, 76);
+    outline: none;
+    border: none;
+}
+
+.receipt{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.receipt table{
+    padding: 15px;
+    margin-right: 20px;
+    border: 1px solid greenyellow;
+    color: white;
+}
